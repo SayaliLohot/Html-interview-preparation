@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Style the element with the id "myHeader" */
+        #myHeader {
+          background-color: lightblue;
+          color: black; 
+          text-align: center;
+        }
+        
+        /* Style all elements with the class name "subject" */
+        .subject {
+          background-color: tomato;
+          color: white;
+        } 
+        </style>
+</head>
+<body>
+    <h1> HTML INTERVIEW QUESTIONS DAY 1</h1>
+    <h3>Q1.Difference between div and span</h3>
+<table border="1">
+    <tr>
+        <th> Div </th>
+        <th> Span </th>
+    </tr>
+    <tr>
+        <td> Div is Block level element</td>
+        <td>Span is Inline level element</td>
+    </tr>
+    <tr>
+        <td>It always start on new line</td>
+        <td>It starts with same line just after previous span tag</td>
+    </tr>
+    <tr>
+        <td>It takes entire width of the screen for the particular tag area</td>
+        <td>Span takes the space required for it, it does not occupy unneccesary space</td>
+    </tr>
+</table>
+<p> For exapmple : </p>
+    <!-- Diff bet Div and span-->
+   <div> This is some text in a div element </div><div> This is some text in a div element </div>
+   <span> This is some text in a Span element</span><span> This is some text in a Span element</span>
+    
+   <h3>Q2.Difference between class and IDs</h3>
+               Ids and classes are selectors and are used to give the name to element.
+               <br><br>
+   <table border="1">
+    <tr>
+        <th>Class</th>
+        <th> Id's</th>
+    </tr>
+    <tr>
+        <td> Classes can br common</td>
+        <td> Id's are unique</td>
+    </tr>
+    <tr>
+        <td>Classes use to target multiple element</td>
+        <td> Id's used to target a particular element</td>
+    </tr>
+    <tr>
+        <td>Class can be denoted with (.)</td>
+        <td> Id can be denoted with (#)</td>
+    </tr>
+    <tr>
+        <td> We can apply same value of class to the different element in single file</td>
+        <td>We can't apply same value of any id to different element. In one file id value must be one.</td>
+    </tr>
+   </table>
+   <p> For exapmple : </p>
+   <!-- An element with a unique id -->
+<h1 id="myHeader">My Subjects</h1>
+
+<!-- Multiple elements with same class -->
+<h2 class="subject">HTML</h2>
+<p>Html is the structure of webpage.</p>
+
+<h2 class="subject">CSS</h2>
+<p>Css is designing of webpage.</p>
+
+<h2 class="subject">Javascrift</h2>
+<p>Javascrift is the programming language.</p>
+
+<!--Self Closing tags-->
+<h3>Q3.What are self closing tags</h3>
+<ul type="dot">
+<li>In HTML, The self closing tags are a kind of HTML tag that does not required seperate closing tag.</li>
+<li>An opening tag begins a section of page content, and a closing tag ends it.</li>
+<li>Some examples of self closing tags are hr , br , and img .</li>
+</ul>
+
+<!-- Types of heading tag-->
+<h3>Q4.How many types of headings are there? How to decide which to use where.</h3>
+<ul>
+ <li>In Html, there are six levels of headings. </li>
+ <li>The heading elements are h1, h2, h3, h4, h5, and h6 </li>
+ <li>The h1 element is the highest or most important level, and the h6 element is the least important.</li>
+</ul>
+<p> For exapmple : </p>
+<h1>This is h1 content.</h1>
+<h2>This is h2 content.</h2>
+<h3>This is h3 content.</h3>
+<h4>This is h4 content.</h4>
+<h5>This is h5 content.</h5>
+<h6>This is h6 content.</h6>
+
+<!-- Diff bet Block and inline-->
+<h3>Q5.Difference between block and inline</h3>
+<table border="1">
+    <tr>
+        <th>Block element</th>
+        <th>Inline element</th>
+    </tr>
+    <tr>
+        <td>A block-level element always starts on a new line</td>
+        <td>An inline element does not start on a new line.</td>
+    </tr>
+    <tr>
+        <td>It always takes up the full width available (stretches out to the left and right as far as it can).</td>
+        <td>It only takes up as much width as necessary.</td>
+    </tr>
+</table>
+<b>Example of Block</b>
+<p>Hello World</p>
+<div>Hello World</div>
+<br>
+<b>Example of Inline</b>
+<span>Hello World</span>
+<br>
+<!-- Diff bet em and strong-->
+<h3>Q6.Difference between em and strong</h3>
+<p>The &lt;strong&gt; and  &lt;em&gt; tags are used for emphasizing parts of a text. </p>
+<table border="1">
+    <th>&lt;strong&gt;</th>
+    <th> &lt;em&gt;</th>
+    <tr>
+        <td>The &lt;strong&gt; tag should be used to define text with strong importance.</td>
+        <td>The &lt;em&gt; tag should be used to represent stress emphasis,(emphasized text in a different tone of voice). </td>
+    </tr>
+    <tr>
+        <td>The content inside is typically displayed in bold.</td>
+        <td>The content inside is typically displayed in italic.</td>
+    </tr>
+</table>
+<p> For example : </p>
+<strong>This text is important!</strong>
+<p>You <em>have</em> to hurry up!</p>
+
+
+<!-- Attributes-->
+<h3>Q7.What are attributes?</h3>
+<ul >
+    <li>Attributes provide additional information about elements.</li>
+    <li>Attributes are always specified in the start tag.</li>
+    <li>Attributes usually come in name/value pairs like: name="value" </li>
+    <li>It should be written in lower case letters only.</li>
+    <li>Multiple attributes can be used in the particular tag &lt;img src="" alt="" width="" height=""&gt;</li>
+</ul >
+<b> Example for img tag with attributes :</b>
+<ul type="square">
+<li>The img tag has "src" attribute specifies the path to the image to be displayed.</li>
+<li> It also contain the "width" and "height" attributes, which specify the width and height of the image (in pixels).</li>
+<li>The required alt attribute for the img tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to a slow connection, or an error in the src attribute, or if the user uses a screen reader.</li>
+</ul>
+<br>
+<img src="http://3.bp.blogspot.com/-ZuCwF8EUYJg/UHrY0pHi5BI/AAAAAAAABEY/KADMthQUrJk/s720/Sahyadri%2520variation.JPG" alt="image of sahyadri mountain" height="200px">
+
+<!-- Difference between Tag and attributes-->
+<h3>Q8.Difference between HTML tags and elements?</h3>
+<ul>
+    <li>HTML tags are used to hold the HTML element.</li>
+    <li>HTML element holds the content</li>
+    <li>Tag contains opening ang closing tag and if we put value or content, text attribute inside tag its called as Element.</li>
+    <li>HTML tag starts with &lt; and ends with &gt; Whatever written within a HTML tag are HTML elements.</li>
+</ul>
+<a href="./index2.html" target="_blank"> Next </a>
+</body>
+</html>

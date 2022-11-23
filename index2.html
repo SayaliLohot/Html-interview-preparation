@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML INTERVIEW QUESTIONS DAY 2</h1>
+
+    <!--Explain br tags-->
+   <h3>Q9. Explain br tags</h3>
+ <ul>
+    <li>The &lt; br &gt; tag inserts a single line break.</li>
+    <li> Used to break the text (element) and display in next line.</li>
+    <li> &lt; br &gt; is self closing tag.</li>
+ </ul>
+<b> For Example :</b>
+<p>To force<br> line breaks<br> in a text,<br> use the br<br> element.</p>
+
+<h3>Q10. Explain how many different types of lists we have in html </h3>
+<p>There are 3 types of lists in HTML, namely: Unordered List, Ordered List, & Description List.</p>
+<b>Unordered HTML List :</b> 
+<p>An unordered list starts with the &lt;ul&gt; tag. Each list item starts with the &lt;li &gt; tag.<br>
+ The list items will be marked with bullets (small black circles) by default.</p>
+ <ul type=> <!-- 4 default, circle, square, none and reversered cant be used in this-->
+    <li>Mango</li>
+    <li>Litchi</li>
+    <li>Watermelon</li>
+ </ul>
+    <b>Ordered HTML List :</b>
+    <p>An ordered list starts with the &lt;ol&gt; tag. Each list item starts with the &lt;li&gt; tag.<br>
+    The list items will be marked with numbers by default.
+    </p>
+    <ol>
+    <li>Mango</li>
+    <li>Litchi</li>
+    <li>Watermelon</li>
+    </ol>
+<!-- if we want to start with 5 and reversed order then -->
+<p> Ordere list reversed</p>
+<ol type="5" reversed>
+    <li> Mango</li>
+    <li> litchi</li>
+    <li> Watermelon</li>
+</ol>
+<p> Ordered list start with 15</p>
+<ol start="15"><!-- to start with 15 use start attribute-->
+    <li> Mango</li>
+    <li> Litchi</li>
+    <li> Watermelon</li>
+</ol>
+
+<b>descriptive list</b>
+<p>A description list is a list of terms, with a description of each term.<br>
+    The &lt;dl&gt; tag defines the description list, the &lt;dt&gt; tag defines the term (name), and the &lt;dd&gt; tag describes each term</p>
+ <!-- Despcription list dt:-des. term, dd :- desp data-->
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+    </dl>
+
+<h3>Q11. What are semantic tags?</h3>
+<ul>
+    <li>A semantic tag clearly describes its meaning to both the browser and the developer.</li>
+   <li> Examples of semantic tags: &lt;header&gt;, &lt;footer&gt;, &lt;nav&gt;, &lt;form&gt;, &lt;table&gt;. - Clearly defines its content.</li>
+   <li>Use :</li>
+   <ol>
+    <li>The pages made with semantic elements are much easier to read.</li>
+    <li>It has greater accessibility.</li>
+    <li>It offers a better user experience.</li>
+   </ol>
+</ul>
+
+<h3>Q12. Write code to create an ordered list with roman numbers?</h3>
+<p>type="I"	The list items will be numbered with uppercase roman numbers</p>
+<ol type="I">  
+     <li>Eat</li>
+     <li>Code</li>
+     <li>Sleep</li>
+    </ol>
+    <p>type="i" The list items will be numbered with lowercase roman numbers</p>
+<ol type="i">
+    <li>Eat</li>
+    <li>Code</li>
+    <li>Sleep</li>
+</ol>
+
+<h3>Q13. Write code to create an unordered list with circle </h3>
+<p>Given below is an example to create an unordered list with circle bullets in HTML</p>
+<ul>
+    <li> Sayali </li>
+    <li> Shruti </li>
+    <li> Komal </li>
+</ul>
+
+<h3> Q14. Write code to create a link to https://www.prepbytes.com</h3>
+<p>Given below is an example to create link with using &lt;a&gt; tag</p>
+<a href="https://www.prepbytes.com/"> Prepbytes </a>
+
+<h3>Q15. Write a code to insert an image?</h3>
+<ul>
+    <li>The &lt;img &gt; tag is used to embed an image in an HTML page.</li>
+    <li>The &lt;img &gt; tag has two required attributes:</li>
+    <ol>
+        <li>src - Specifies the path to the image</li>
+        <li>alt - Specifies an alternate text for the image, if the image for some reason cannot be displayed</li>
+    </ol>
+    <li>The width and height attributes use to define the width and height of the image in pixels. </li>
+    <li> Image can be embed by using two paths:</li>
+    <ol>
+        <li>An <strong>absolute file path</strong> is the full URL to a file</li>
+        <li>A <strong>relative file path </strong>points to a file relative to the current page.</li>
+    </ol>
+</ul>
+<p>Below is an example to insert an image with absolute file path</p>
+<img src="https://archive.org/download/prepbytes_202106/Prepbytes%20Logo.PNG" alt="Image of prepbytes">
+<p>Below is an example to insert an image with relative file path</p>
+<img src="./Img of prepbytey.png" alt="Prepbytes image" width="350px">
+
+<h3>Q16. Create a form contain input fields like name age email and contact?</h3>
+<form action="./index3.html">
+    <lable for="name"> Name </lable> <!-- for and id attribute must be same-->
+    <input type="text" name="Name" id="name" value="" placeholder="enter name here" required><br><br>
+    <lable for="age"> Age </lable>
+    <input type="number" name="age" value="" placeholder="Enter age here" id="age"><br><br>
+    <lable for="email"> Email </lable>
+    <input type="email" name="email" value="" placeholder="Enter email here" id="email" required><br><br>
+    <lable for="contact no."> Contact </lable>
+    <input type="tel" name="contact no" id="contact no." placeholder=" enter contact here" value=""><br><br>
+    <!-- cant fill value attribute as users have to fill the values it cant be fix its changing as per users-->
+
+<h3>Q17. Create a table and explain how to acheive colspan?</h3>
+<p>To make a cell span over multiple columns, use the colspan attribute(merging of columns).</p>
+<table border="3">
+    <thead>
+        <th> Name</th>
+        <th colspan="2">Contact no</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Sayali</td>
+            <td>1234566783</td>
+            <td>9855344265</td>
+        </tr>
+        <tr>
+            <td> Shruti</td>
+            <td>3576727382</td>
+            <td>7629139900</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Q18.Create radio button (MERN, MEAN : course)and checkbox(HTML, CSS, React, Node : technology) and explain the difference between these two</h3>
+<p> Below is the output of radio button:</p>
+<lable for="course"> Course : </lable>
+<input type="radio" name="Course" value="MERN" id="course">MERN
+<input type="radio" name="Course" value="MEAN"id="course">MEAN
+<br><br>
+<!-- name attribute must be same for radio-->
+<p> Below is the output of checkbox:</p>
+<lable for="Technology"> Technology : </lable>
+<input type="checkbox" name="Technology" value="HTML" id="Technology">HTML
+<input type="checkbox" name="Technology" value="CSS" id="Technology">CSS
+<input type="checkbox" name="Technology" value="React" id="Technology">React
+<input type="checkbox" name="Technology" value="Node" id="Technology">Node
+<br><br>
+<button type="submit" > Click me !</button>
+</form>
+<br>
+<a href="./index.html"> Go back </a>
+</body>
+</html>
